@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SyftCom | Facebook Ad Accounts at Scale</title>
+<meta name="description" content="Facebook ad accounts for agencies and media buyers: set up for you, with an account manager and one portal for spend, billing and requests.">
+<!-- DESIGN PREVIEW ONLY: remove this noindex line when the real site launches. -->
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap">
+
+<!-- AEO: structured data. Every answer below is also visible on the page.
+     The FAQ entries that still hold a [PLACEHOLDER] (price, turnaround, replacement terms) are left out until Ryan and Dan confirm them. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://syftcom.com/#org",
+      "name": "SyftCom",
+      "url": "https://syftcom.com/",
+      "description": "SyftCom provides Facebook ad accounts for agencies and media buyers, with an account manager and a client portal for ad spend, billing and requests."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://syftcom.com/#site",
+      "url": "https://syftcom.com/",
+      "name": "SyftCom",
+      "publisher": { "@id": "https://syftcom.com/#org" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a Facebook ad account agency?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A company that provides Facebook ad accounts to advertisers and looks after the relationship around them. SyftCom sets up accounts for agencies and media buyers, assigns an account manager, and runs a portal for ad spend, billing and requests." }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get a Facebook ad account from SyftCom?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Send a request with the number of accounts you need. We reply by email, confirm the details with you, then set up the accounts and hand them over to your team." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is SyftCom affiliated with Meta?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. SyftCom is an independent company. Facebook, Instagram and Meta are trademarks of Meta Platforms, Inc. Campaigns you run must follow Meta's advertising policies." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I see my ad spend and billing?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Your client portal shows Meta ad spend, subscriptions and recurring billing for the accounts assigned to your company." }
+        },
+        {
+          "@type": "Question",
+          "name": "Who runs the campaigns?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Your team does. SyftCom provides and looks after the accounts, and you create and run the ads." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+:root{--mint:#3DDC97;--mint-text:#7BEBB9;--bg:#0B100F;--line:#1F2E29;--deep:#08693F}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#F3F7F5;font-family:'Inter',system-ui,sans-serif;color:#0B1410;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+button,input,select,textarea{font-family:inherit}
+.mono{font-family:'JetBrains Mono',ui-monospace,Menlo,monospace}
+.disp{font-family:'Space Grotesk','Inter',system-ui,sans-serif}
+.wrap{max-width:1200px;margin:0 auto}
+.caret{display:inline-block;width:.46ch;height:.86em;margin-left:.1em;vertical-align:-.06em;background:var(--mint);animation:blink 1.1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.caret{animation:none}html{scroll-behavior:auto}}
+:focus-visible{outline:2px solid var(--mint);outline-offset:2px}
+.btn-p{display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 18px;border:0;border-radius:12px;background:var(--mint);color:#05140D;font-size:14px;font-weight:600;text-decoration:none;cursor:pointer}
+.btn-p:hover{filter:brightness(1.08)}
+.btn-lg{min-height:52px;padding:0 24px;font-size:15px}
+.btn-g{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border:1px solid #2F4A40;border-radius:12px;background:transparent;color:#EAF2EE;font-size:14px;font-weight:500;text-decoration:none}
+.btn-g:hover{border-color:var(--mint)}
+.btn-g.btn-lg{min-height:52px;padding:0 24px;font-size:15px}
+.nav-links{display:flex;margin-left:auto;gap:28px;font-size:14px}
+.nav-links a{color:#B3C2BB;text-decoration:none}
+.nav-links a:hover{color:#fff}
+@media (max-width:900px){.nav-links{display:none}}
+.grid-bg{background-color:var(--bg);background-image:linear-gradient(#121B18 1px,transparent 1px),linear-gradient(90deg,#121B18 1px,transparent 1px);background-size:48px 48px}
+.dots{background-color:var(--mint);background-image:radial-gradient(rgba(5,20,13,.2) 1.4px,transparent 1.6px);background-size:18px 18px}
+.eyebrow{font-size:13px;letter-spacing:.06em}
+.h2{margin:14px 0 0;font-family:'Space Grotesk','Inter',sans-serif;font-weight:700;letter-spacing:-0.02em;line-height:1.08}
+.lead{margin:18px 0 0;max-width:720px;font-size:18px;line-height:1.65;color:#2F3D36}
+.cards{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:20px;margin-top:48px}
+.c3{grid-column:span 2}
+.c2{grid-column:span 3}
+@media (max-width:980px){.c3,.c2{grid-column:span 6}}
+.card{background:linear-gradient(#E3F4EB,#FFFFFF 70%);border:1px solid #BFD6CB;border-radius:18px;padding:28px;display:flex;flex-direction:column;gap:14px}
+.card .lab{font-size:12px;letter-spacing:.05em;color:#33433B}
+.card .lab b{color:var(--deep)}
+.card h3{margin:6px 0 0;font-family:'Space Grotesk','Inter',sans-serif;font-size:22px;line-height:1.2;font-weight:700;color:#0B1410}
+.card p{margin:0;font-size:15px;line-height:1.65;color:#33433B}
+.card a.more{margin-top:auto;font-size:14px;font-weight:600;color:var(--deep);text-decoration:none;display:inline-flex;min-height:44px;align-items:center}
+.card a.more:hover{text-decoration:underline}
+.sample{font-size:11px;letter-spacing:.05em;color:#FFD98A;border:1px solid #5C4A1E;border-radius:999px;padding:4px 10px}
+.st{display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:500;border-radius:999px;padding:3px 10px;border:1px solid;white-space:nowrap}
+.st i{width:6px;height:6px;border-radius:50%;background:currentColor;display:inline-block}
+.st.ok{border-color:#1E6B4A;color:var(--mint-text)}
+.st.rev{border-color:#6B5420;color:#FFD98A}
+.st.bad{border-color:#7A3B33;color:#FFA799}
+.st.open{border-color:#32506A;color:#9CCBF0}
+.steps{list-style:none;margin:36px 0 0;padding:0;display:flex;flex-direction:column;gap:26px}
+.steps li{display:flex;gap:18px}
+.steps .n{flex:none;font-size:14px;color:var(--mint-text);padding-top:3px}
+.steps .t{font-family:'Space Grotesk','Inter',sans-serif;font-size:19px;font-weight:700;color:#F2F8F5}
+.steps .d{margin-top:6px;font-size:15px;line-height:1.6;color:#C3D0CA}
+.trow{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,.8fr) minmax(0,.8fr);gap:12px;align-items:center;padding:12px 6px;border-bottom:1px solid #16231E}
+.who{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:40px}
+@media (max-width:900px){.who{grid-template-columns:1fr}}
+.who>div{background:#fff;border:1px solid #CBDAD2;border-radius:16px;padding:24px}
+.who h3{margin:0;font-family:'Space Grotesk','Inter',sans-serif;font-size:20px;color:#0B1410}
+.who p{margin:10px 0 0;font-size:15px;line-height:1.65;color:#33433B}
+.glance{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:36px 0 0}
+@media (max-width:760px){.glance{grid-template-columns:1fr}}
+.glance div{background:#fff;border:1px solid #CBDAD2;border-radius:14px;padding:18px 20px}
+.glance dt{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.05em;color:var(--deep);text-transform:uppercase}
+.glance dd{margin:8px 0 0;font-size:16px;line-height:1.55;color:#1B2822}
+.tbl{margin-top:36px;overflow-x:auto;border:1px solid #BFD6CB;border-radius:16px;background:#fff}
+.tbl table{width:100%;min-width:680px;border-collapse:collapse;font-size:15px;line-height:1.55}
+.tbl caption{position:absolute;left:-9999px}
+.tbl th,.tbl td{padding:16px 20px;text-align:left;vertical-align:top;border-bottom:1px solid #E1EBE6}
+.tbl thead th{background:#EAF4EF;font-family:'Space Grotesk','Inter',sans-serif;font-size:16px;color:#0B1410}
+.tbl thead th:last-child{background:#0B100F;color:var(--mint-text)}
+.tbl tbody th{font-weight:600;color:#0B1410;width:22%}
+.tbl tbody td{color:#33433B}
+.tbl tbody td:last-child{color:#0B1410;background:#F5FBF8}
+.tbl tbody tr:last-child th,.tbl tbody tr:last-child td{border-bottom:0}
+.faq details{background:#fff;border:1px solid #CBDAD2;border-radius:14px}
+.faq summary{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px;padding:14px 22px;cursor:pointer;list-style:none;color:#0B1410;font-size:17px;font-weight:600}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:'JetBrains Mono',monospace;font-size:20px;color:var(--deep)}
+.faq details[open] summary::after{content:"\2212"}
+.faq .ans{padding:0 22px 20px;font-size:15px;line-height:1.7;color:#33433B}
+.ph{background:#FFF1CC;color:#5C4200;border-radius:6px;padding:1px 6px;font-family:'JetBrains Mono',monospace;font-size:13px}
+label{font-size:13px;font-weight:500;color:#C3D0CA}
+.field{display:flex;flex-direction:column;gap:8px}
+.field input,.field select,.field textarea{min-height:48px;padding:0 14px;background:#0A110F;border:1px solid #2A3D36;border-radius:10px;color:#F2F8F5;font-size:16px}
+.field textarea{padding:12px 14px;min-height:96px;resize:vertical}
+.field input::placeholder,.field textarea::placeholder{color:#7F9189}
+</style>
+</head>
+<body>
+<div role="note" style="background:#FFF1CC;color:#4A3500;font-size:13px;line-height:1.5;padding:10px 24px;text-align:center;border-bottom:1px solid #E6CF8F"><strong>Design preview v1, not live.</strong> Numbers are sample data. Yellow tags mark copy Ryan and Dan still need to confirm.</div>
+
+<!-- NAV -->
+<header style="background:#0B100F;color:#EAF2EE;border-bottom:1px solid #1B2823">
+  <div class="wrap" style="padding:16px 24px;display:flex;align-items:center;gap:20px;flex-wrap:wrap">
+    <a href="#top" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:#EAF2EE" aria-label="SyftCom home">
+      <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#3DDC97"/><rect x="7" y="9" width="18" height="3.2" rx="1.6" fill="#05140D"/><rect x="10" y="14.4" width="12" height="3.2" rx="1.6" fill="#05140D"/><rect x="13" y="19.8" width="6" height="3.2" rx="1.6" fill="#05140D"/></svg>
+      <span class="disp" style="font-size:21px;font-weight:700;letter-spacing:-0.01em">SyftCom</span>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#about">What we do</a>
+      <a href="#what">What we provide</a>
+      <a href="#how">How it works</a>
+      <a href="#faq">Questions</a>
+    </nav>
+    <div style="margin-left:auto;display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+      <a class="btn-p" href="#start">Request an ad account</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section id="top" class="grid-bg" style="color:#EAF2EE;padding:72px 24px 104px" aria-labelledby="h-hero">
+  <div class="wrap">
+    <div style="background:#0F1816;border:1px solid #223630;border-radius:20px;box-shadow:0 40px 100px rgba(61,220,151,.08);overflow:hidden">
+      <div style="display:flex;align-items:center;gap:8px;padding:14px 20px;border-bottom:1px solid #1B2823;background:#0C1412">
+        <span style="width:11px;height:11px;border-radius:50%;background:#2A3D36"></span>
+        <span style="width:11px;height:11px;border-radius:50%;background:#2A3D36"></span>
+        <span style="width:11px;height:11px;border-radius:50%;background:#2A3D36"></span>
+        <span class="mono" style="margin-left:auto;font-size:12px;color:#93A39B">syftcom &middot; zsh</span>
+      </div>
+      <div style="padding:48px 40px;display:flex;flex-wrap:wrap;gap:48px;align-items:center">
+        <div style="flex:1 1 460px;min-width:0">
+          <div class="mono" style="font-size:13px;color:#93A39B;margin-bottom:22px"><span style="color:var(--mint-text)">you@syftcom ~ $</span> // facebook ad accounts &middot; at scale</div>
+          <h1 id="h-hero" class="disp" style="margin:0;font-size:clamp(38px,5.4vw,68px);line-height:1.02;font-weight:700;letter-spacing:-0.03em;color:#F2F8F5">Facebook ad accounts, <span style="color:var(--mint);white-space:nowrap">at scale.<span class="caret"></span></span></h1>
+          <p class="mono" style="margin:26px 0 0;font-size:14px;line-height:1.75;color:#93A39B;max-width:580px"># SyftCom sets up Facebook ad accounts for agencies and media buyers, assigns an account manager, and puts spend and billing in one portal.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:32px">
+            <a class="btn-p btn-lg" href="#start">Request an ad account
+              <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="#05140D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="btn-g btn-lg" href="#how">See how it works</a>
+          </div>
+          <div class="mono" style="margin-top:22px;font-size:12px;letter-spacing:.04em;color:#93A39B">ACCOUNT MANAGER &middot; SPEND &amp; BILLING PORTAL &middot; TRACKED SUPPORT REQUESTS</div>
+        </div>
+
+        <div style="flex:1 1 380px;min-width:0;background:#0A110F;border:1px solid #223630;border-radius:16px;padding:20px">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px">
+            <span class="disp" style="font-size:16px;font-weight:700;color:#F2F8F5">Your ad accounts</span>
+            <span class="mono sample">SAMPLE DATA</span>
+          </div>
+          <div class="mono trow" style="padding:0 6px 10px;font-size:11px;letter-spacing:.05em;color:#93A39B;border-bottom:1px solid #1B2823"><span>ACCOUNT</span><span>STATUS</span><span style="text-align:right">SPEND (7D)</span></div>
+          <div class="trow"><span class="mono" style="font-size:13px;color:#EAF2EE">Account 0142</span><span><span class="st ok"><i></i>Active</span></span><span class="mono" style="font-size:13px;color:#EAF2EE;text-align:right">$1,240</span></div>
+          <div class="trow"><span class="mono" style="font-size:13px;color:#EAF2EE">Account 0177</span><span><span class="st ok"><i></i>Active</span></span><span class="mono" style="font-size:13px;color:#EAF2EE;text-align:right">$860</span></div>
+          <div class="trow"><span class="mono" style="font-size:13px;color:#EAF2EE">Account 0121</span><span><span class="st rev"><i></i>In review</span></span><span class="mono" style="font-size:13px;color:#EAF2EE;text-align:right">$0</span></div>
+          <div class="trow" style="border-bottom:0"><span class="mono" style="font-size:13px;color:#EAF2EE">Account 0098</span><span><span class="st bad"><i></i>Needs attention</span></span><span class="mono" style="font-size:13px;color:#EAF2EE;text-align:right">$310</span></div>
+          <p style="margin:12px 4px 0;font-size:12px;line-height:1.55;color:#93A39B">Sample numbers. Your real portal lists the accounts assigned to your company.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT IS SYFTCOM (answer block) -->
+<section id="about" style="padding:104px 24px 40px" aria-labelledby="h-about">
+  <div class="wrap">
+    <div class="mono eyebrow" style="color:var(--deep)">// WHAT IS SYFTCOM</div>
+    <h2 id="h-about" class="h2" style="max-width:820px;font-size:clamp(30px,3.6vw,48px)">What is SyftCom?</h2>
+    <p class="lead">SyftCom is an agency that provides Facebook ad accounts at scale. We set up the accounts, assign you an account manager, and give you a client portal where ad spend, billing and support requests live together. It is built for teams that need many accounts, not one.</p>
+    <dl class="glance">
+      <div><dt>What we provide</dt><dd>Facebook ad accounts, set up and handed over to your team.</dd></div>
+      <div><dt>Who it is for</dt><dd>Agencies, media buyers and growth teams that run ads across many accounts.</dd></div>
+      <div><dt>What you get</dt><dd>An account manager and a client portal for ad spend, billing and requests.</dd></div>
+      <div><dt>How to start</dt><dd>Send a request with the number of accounts you need. We reply by email.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- WHAT WE PROVIDE -->
+<section id="what" style="padding:72px 24px 96px" aria-labelledby="h-what">
+  <div class="wrap">
+    <div class="mono eyebrow" style="color:var(--deep)">// WHAT WE PROVIDE</div>
+    <h2 id="h-what" class="h2" style="max-width:860px;font-size:clamp(30px,3.6vw,48px)">Everything behind a Facebook ad account, handled by one team.</h2>
+    <p class="lead">Five parts. Your account manager switches on what your company needs.</p>
+
+    <div class="cards">
+      <article class="card c3">
+        <div class="mono lab"><b>01</b> &middot; AD ACCOUNTS</div>
+        <h3>Facebook ad accounts, ready to run</h3>
+        <p>You need more ad accounts than you can open and look after yourself. We set up the accounts and hand them to your team, so your time goes into campaigns.</p>
+      </article>
+      <article class="card c3">
+        <div class="mono lab"><b>02</b> &middot; ACCOUNT MANAGEMENT</div>
+        <h3>A named account manager</h3>
+        <p>When something looks wrong you want a person, not a help center. Every client has an account manager who knows your accounts and answers your requests.</p>
+      </article>
+      <article class="card c3">
+        <div class="mono lab"><b>03</b> &middot; SPEND &amp; BILLING</div>
+        <h3>Spend and billing in one portal</h3>
+        <p>Checking spend account by account eats the week. Your portal shows Meta ad spend, subscriptions and recurring billing next to your accounts.</p>
+      </article>
+      <article class="card c2">
+        <div class="mono lab"><b>04</b> &middot; SUPPORT REQUESTS</div>
+        <h3>Requests that do not get lost</h3>
+        <p>A problem mentioned in a chat is a problem forgotten. Open a ticket in the portal for a profile issue, new assets or a cancellation, and follow it until it is done.</p>
+      </article>
+      <article class="card c2">
+        <div class="mono lab"><b>05</b> &middot; NUMBERS &amp; PROXIES</div>
+        <h3>Numbers, codes and proxies, through OpenChannel</h3>
+        <p>Every account needs a phone number and a clean IP. OpenChannel, our companion portal, tracks both and shows verification codes to your team.</p>
+        <a class="more" href="https://openchannel.tech">See OpenChannel &rarr;</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WHO IT IS FOR -->
+<section id="who" style="padding:0 24px 104px" aria-labelledby="h-who">
+  <div class="wrap">
+    <div class="mono eyebrow" style="color:var(--deep)">// WHO IT IS FOR</div>
+    <h2 id="h-who" class="h2" style="max-width:820px;font-size:clamp(30px,3.6vw,48px)">Who is SyftCom for?</h2>
+    <p class="lead">Teams that advertise on Facebook and Instagram at volume and want accounts and support handled by someone else.</p>
+    <div class="who">
+      <div><h3>Agencies</h3><p>You run ads for many clients and need accounts for each of them, without opening and setting up every one yourself.</p></div>
+      <div><h3>Media buyers</h3><p>You scale spend across offers and need more accounts as you grow, plus one place to see what each one spent.</p></div>
+      <div><h3>Growth teams</h3><p>You outgrew a single ad account and want one partner behind your accounts instead of a stack of vendors.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how" style="background:#13201B;color:#EAF2EE;padding:104px 24px" aria-labelledby="h-how">
+  <div class="wrap" style="display:flex;flex-wrap:wrap;gap:56px;align-items:center">
+    <div style="flex:1 1 440px;min-width:0">
+      <div class="mono eyebrow" style="color:var(--mint-text)">// HOW IT WORKS</div>
+      <h2 id="h-how" class="h2" style="font-size:clamp(30px,3.6vw,46px);color:#F2F8F5">How do I get a Facebook ad account from SyftCom?</h2>
+      <p style="margin:16px 0 0;max-width:520px;font-size:17px;line-height:1.6;color:#C3D0CA">Four steps, from request to running ads.</p>
+      <ol class="steps">
+        <li><span class="mono n">01</span><div><div class="t">Send a request</div><div class="d">Tell us who you are and how many accounts you need.</div></div></li>
+        <li><span class="mono n">02</span><div><div class="t">Talk to your account manager</div><div class="d">We confirm what you need, how it is billed and when you can start.</div></div></li>
+        <li><span class="mono n">03</span><div><div class="t">Get your accounts</div><div class="d">We set up the accounts, hand them to your team and give you a portal login.</div></div></li>
+        <li><span class="mono n">04</span><div><div class="t">Run your ads</div><div class="d">Your team runs the campaigns. Spend and billing show in the portal, and requests go through tickets.</div></div></li>
+      </ol>
+    </div>
+
+    <div style="flex:1 1 440px;min-width:0;background:#0F1816;border:1px solid #2A4137;border-radius:18px;padding:20px;box-shadow:0 30px 80px rgba(0,0,0,.25)">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px">
+        <span class="disp" style="font-size:16px;font-weight:700;color:#F2F8F5">Support requests</span>
+        <span class="mono sample">SAMPLE DATA</span>
+      </div>
+      <div class="trow" style="grid-template-columns:minmax(0,1.7fr) minmax(0,1fr)"><span style="font-size:14px;line-height:1.4;color:#EAF2EE">Profile issue<br><span class="mono" style="font-size:12px;color:#93A39B">Account 0142</span></span><span style="text-align:right"><span class="st rev"><i></i>In progress</span></span></div>
+      <div class="trow" style="grid-template-columns:minmax(0,1.7fr) minmax(0,1fr)"><span style="font-size:14px;line-height:1.4;color:#EAF2EE">Request new assets<br><span class="mono" style="font-size:12px;color:#93A39B">3 accounts</span></span><span style="text-align:right"><span class="st open"><i></i>Open</span></span></div>
+      <div class="trow" style="grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);border-bottom:0"><span style="font-size:14px;line-height:1.4;color:#EAF2EE">Cancellation request<br><span class="mono" style="font-size:12px;color:#93A39B">Account 0098</span></span><span style="text-align:right"><span class="st ok"><i></i>Done</span></span></div>
+      <p style="margin:12px 4px 0;font-size:12px;line-height:1.55;color:#93A39B">Sample rows. Every request shows who has it and where it stands.</p>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON -->
+<section id="compare" style="padding:104px 24px 96px" aria-labelledby="h-compare">
+  <div class="wrap">
+    <div class="mono eyebrow" style="color:var(--deep)">// ON YOUR OWN OR WITH US</div>
+    <h2 id="h-compare" class="h2" style="max-width:860px;font-size:clamp(30px,3.6vw,48px)">Should I run Facebook ad accounts myself or use SyftCom?</h2>
+    <p class="lead">Running them yourself gives you full control, and puts every setup and billing task on your team. With SyftCom those tasks move to an account manager and a portal.</p>
+    <div class="tbl">
+      <table>
+        <caption>Running Facebook ad accounts on your own compared with using SyftCom</caption>
+        <thead><tr><th scope="col">&nbsp;</th><th scope="col">On your own</th><th scope="col">With SyftCom</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Getting accounts</th><td>You open and set up each account yourself.</td><td>We set up the accounts and hand them over.</td></tr>
+          <tr><th scope="row">Who to ask</th><td>Whoever you can reach.</td><td>Your account manager.</td></tr>
+          <tr><th scope="row">Seeing spend</th><td>Check each account separately.</td><td>One portal shows Meta ad spend.</td></tr>
+          <tr><th scope="row">Billing</th><td>Paid and tracked account by account.</td><td>Subscriptions and recurring billing in the portal.</td></tr>
+          <tr><th scope="row">When something goes wrong</th><td>Handled in chats and emails.</td><td>Tracked as a ticket from request to done.</td></tr>
+          <tr><th scope="row">Numbers and proxies</th><td>Source and track them yourself.</td><td>Tracked through OpenChannel.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- MINT BAND -->
+<section id="band" class="dots" style="color:#05140D;padding:88px 24px" aria-labelledby="h-band">
+  <div class="wrap" style="display:flex;flex-wrap:wrap;gap:32px;align-items:flex-end;justify-content:space-between">
+    <div style="flex:1 1 560px;min-width:0">
+      <div class="mono eyebrow" style="color:#06301D">// NO SPREADSHEET CHASING</div>
+      <h2 id="h-band" class="h2" style="font-size:clamp(32px,4.6vw,60px);line-height:1.02;letter-spacing:-0.03em">See what every account spent.</h2>
+      <p style="margin:18px 0 0;max-width:600px;font-size:17px;line-height:1.6;color:#06241A">Meta ad spend, subscriptions and billing sit in your client portal, next to the accounts they belong to.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:flex-start;gap:12px">
+      <a href="#start" style="display:inline-flex;align-items:center;min-height:52px;padding:0 26px;border-radius:12px;background:#05140D;color:#7BEBB9;font-size:15px;font-weight:600;text-decoration:none">Request an ad account</a>
+      <span class="mono" style="font-size:12px;letter-spacing:.04em;color:#06301D">WE REPLY BY EMAIL</span>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="padding:104px 24px 96px" aria-labelledby="h-faq">
+  <div style="max-width:800px;margin:0 auto">
+    <div class="mono eyebrow" style="color:var(--deep)">// QUESTIONS</div>
+    <h2 id="h-faq" class="h2" style="font-size:clamp(30px,3.6vw,46px)">Straight answers.</h2>
+    <div class="faq" style="margin-top:36px;display:flex;flex-direction:column;gap:12px">
+      <details name="faq" open><summary>What is a Facebook ad account agency?</summary><div class="ans">A company that provides Facebook ad accounts to advertisers and looks after the relationship around them. SyftCom sets up accounts for agencies and media buyers, assigns an account manager, and runs a portal for ad spend, billing and requests.</div></details>
+      <details name="faq"><summary>How do I get a Facebook ad account from SyftCom?</summary><div class="ans">Send a request with the number of accounts you need. We reply by email, confirm the details with you, then set up the accounts and hand them over to your team.</div></details>
+      <details name="faq"><summary>Is SyftCom affiliated with Meta?</summary><div class="ans">No. SyftCom is an independent company. Facebook, Instagram and Meta are trademarks of Meta Platforms, Inc. Campaigns you run must follow Meta's advertising policies.</div></details>
+      <details name="faq"><summary>How much do the ad accounts cost?</summary><div class="ans">Pricing depends on how many accounts you need. <span class="ph">[PRICING COPY: Ryan and Dan to confirm before launch]</span></div></details>
+      <details name="faq"><summary>How long does setup take?</summary><div class="ans"><span class="ph">[TURNAROUND COPY: Dan to confirm before launch]</span></div></details>
+      <details name="faq"><summary>What happens if an ad account has a problem?</summary><div class="ans">Tell your account manager or open a ticket in the portal. We look at what happened with you and agree the next step. <span class="ph">[REPLACEMENT TERMS: Dan to confirm before launch]</span></div></details>
+      <details name="faq"><summary>Can I see my ad spend and billing?</summary><div class="ans">Yes. Your client portal shows Meta ad spend, subscriptions and recurring billing for the accounts assigned to your company.</div></details>
+      <details name="faq"><summary>Who runs the campaigns?</summary><div class="ans">Your team does. SyftCom provides and looks after the accounts, and you create and run the ads.</div></details>
+      <details name="faq"><summary>Do you provide phone numbers and proxies for the accounts?</summary><div class="ans">Yes, through OpenChannel. It tracks the phone number and the proxy behind each account and shows verification codes to your team. <a href="https://openchannel.tech" style="color:var(--deep);font-weight:600">Learn about OpenChannel</a>.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- REQUEST -->
+<section id="start" class="grid-bg" style="color:#EAF2EE;padding:104px 24px" aria-labelledby="h-start">
+  <div class="wrap" style="display:flex;flex-wrap:wrap;gap:56px;align-items:center">
+    <div style="flex:1 1 440px;min-width:0">
+      <div class="mono eyebrow" style="color:var(--mint-text)">// GET STARTED</div>
+      <h2 id="h-start" class="h2" style="font-size:clamp(34px,4.4vw,56px);line-height:1.05;letter-spacing:-0.03em;color:#F2F8F5">Need Facebook ad accounts?</h2>
+      <p style="margin:20px 0 0;max-width:480px;font-size:17px;line-height:1.6;color:#C3D0CA">Tell us what you run and how many accounts you need. We will tell you what we would set up.</p>
+    </div>
+    <form id="req" style="flex:1 1 400px;min-width:0;background:#0F1816;border:1px solid #223630;border-radius:18px;padding:28px;display:flex;flex-direction:column;gap:18px">
+      <div class="field"><label for="f-name">Your name</label><input id="f-name" type="text" autocomplete="name"></div>
+      <div class="field"><label for="f-email">Work email</label><input id="f-email" type="email" autocomplete="email"></div>
+      <div class="field"><label for="f-co">Agency or company</label><input id="f-co" type="text" autocomplete="organization"></div>
+      <div class="field"><label for="f-size">How many ad accounts do you need?</label>
+        <select id="f-size"><option>1 to 5</option><option>6 to 20</option><option>21 to 50</option><option>More than 50</option></select>
+      </div>
+      <div class="field"><label for="f-note">Anything we should know? (optional)</label><textarea id="f-note" placeholder="What you advertise, where, and when you want to start"></textarea></div>
+      <button class="btn-p btn-lg" type="submit" style="justify-content:center">Request an ad account</button>
+      <p id="note" role="status" class="mono" style="margin:0;font-size:12px;letter-spacing:.03em;color:#93A39B">We reply by email. No obligation.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer style="background:#070B0A;color:#93A39B;padding:32px 24px;border-top:1px solid #1B2823">
+  <div class="wrap" style="display:flex;flex-wrap:wrap;align-items:flex-start;gap:16px 28px;font-size:13px">
+    <div style="flex:1 1 420px;min-width:0;line-height:1.6">
+      <span>&copy; 2026 SyftCom</span><br>
+      <span>SyftCom is not affiliated with Meta. Facebook and Instagram are trademarks of Meta Platforms, Inc.</span>
+    </div>
+    <nav aria-label="Footer" style="margin-left:auto;display:flex;flex-wrap:wrap;gap:8px 24px">
+      <a href="#" style="color:#B3C2BB">Terms</a>
+      <a href="#" style="color:#B3C2BB">Privacy</a>
+      <a href="#start" style="color:#B3C2BB">Contact</a>
+      <a href="https://openchannel.tech" style="color:#B3C2BB">OpenChannel</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+// Design preview only: the request form is not connected to anything yet.
+document.getElementById('req').addEventListener('submit', function (e) {
+  e.preventDefault();
+  document.getElementById('note').textContent = 'Design preview: this form is not connected yet.';
+});
+</script>
+</body>
+</html>
